@@ -45,7 +45,7 @@ GET /api/movies/studios-with-win-count → estúdios com mais vitórias
 
 GET /api/movies/winners-by-year/{year} → vencedores por ano específico
 
-📌 Rodando o backend
+📌 ## Rodando o backend
 
 Na pasta movies/:
 
@@ -82,7 +82,7 @@ Rodar testes do backend
 
 Isso executa os testes de integração.
 
-🎨 Frontend (Angular)
+🎨## Frontend (Angular)
 📌 Tecnologias
 
 Angular 17
@@ -150,6 +150,6 @@ ng test
 
  Documentação (README)
 
-📖 Referências da API Externa
+## Referências da API Externa
 
 Swagger UI: https://challenge.outsera.tech/swagger-ui/index.html
