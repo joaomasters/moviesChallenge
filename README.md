@@ -53,7 +53,7 @@ Na pasta movies/:
 
 
 A API ficará disponível em:
-👉 http://localhost:8080/api/movies
+ http://localhost:8080/api/movies
 
 📌 Testes de integração
 
