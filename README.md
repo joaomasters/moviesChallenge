@@ -61,6 +61,27 @@ Na pasta movies/:
 
 ./mvnw test
 
+Banco de dados H2
+
+O backend usa H2 em memória, já populado automaticamente com movielist.csv.
+Você pode acessar o console H2 em:
+
+http://localhost:8080/h2-console
+
+Configuração padrão:
+
+JDBC URL: jdbc:h2:mem:moviesdb
+
+User: sa
+
+Password: (vazio)
+
+Rodar testes do backend
+./mvnw test
+
+
+Isso executa os testes de integração.
+
 🎨 Frontend (Angular)
 📌 Tecnologias
 
