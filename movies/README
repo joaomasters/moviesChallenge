@@ -1,0 +1,144 @@
+# Golden Raspberry Awards API & Frontend 
+
+Projeto desenvolvido como parte de um desafio técnico para leitura da lista de indicados e vencedores da categoria **Pior Filme** do Golden Raspberry Awards.
+
+O sistema é composto por **backend (Spring Boot + H2)** e **frontend (Angular + Angular Material)**.
+
+---
+
+## Estrutura do Projeto
+movies/
+├─ src/ # Backend - Spring Boot
+│ ├─ main/java/com/example/movies
+│ │ ├─ config/ # Configurações (ex: CORS)
+│ │ ├─ controller/ # Controllers REST
+│ │ ├─ dto/ # DTOs
+│ │ ├─ entity/ # Entidades JPA
+│ │ ├─ repository/ # Repositórios JPA
+│ │ └─ service/ # Regras de negócio
+│ ├─ main/resources/
+│ │ ├─ application.properties
+│ │ └─ movielist.csv # Fonte de dados
+│ └─ test/java/com/example/movies
+│ └─ ...IntegrationTest.java
+├─ desafio-frontend/ # Frontend - Angular + Material
+├─ pom.xml
+└─ README.md
+
+
+
+## Backend (Spring Boot)
+
+### Tecnologias
+- Java 17+
+- Spring Boot 3.x
+- Spring Data JPA + Hibernate
+- Banco em memória **H2**
+- OpenCSV para leitura do arquivo
+- JUnit 5 + Spring Boot Test (integração)
+
+### Como rodar
+1. Entre na pasta do backend:
+   ```bash
+   cd movies
+Rode com Maven:
+
+bash
+Copiar código
+./mvnw spring-boot:run
+Ou no Eclipse/IntelliJ, rode a classe principal MoviesApplication.
+
+Acesse a API:
+
+http://localhost:8080/api/movies → lista completa
+
+http://localhost:8080/api/movies/intervals → maior e menor intervalo de prêmios
+
+http://localhost:8080/api/movies/years-with-multiple-winners → anos com múltiplos vencedores
+
+http://localhost:8080/api/movies/studios-with-win-count → estúdios com mais vitórias
+
+http://localhost:8080/api/movies/winners-by-year/{year} → vencedores de um ano específico
+
+Console do H2:
+
+
+http://localhost:8080/h2-console
+JDBC URL: jdbc:h2:mem:moviesdb
+User: sa
+Password: (vazio)
+## Frontend (Angular)
+Tecnologias
+Angular 18+
+
+Angular Material
+
+TypeScript
+
+RxJS
+
+## Como rodar
+Entre na pasta do frontend:
+
+cd desafio-frontend
+Instale dependências:
+
+
+npm install
+Rode o servidor dev:
+
+ng serve -o
+O app abrirá em http://localhost:4200/.
+
+Páginas
+Dashboard (/) → Estatísticas (intervalos, múltiplos vencedores, top 3 estúdios)
+
+Lista de Filmes (/movies) → Tabela com filmes carregados do backend
+
+✅ Testes de Integração
+Os testes estão em:
+
+/src/test/java/com/example/movies/controller/MovieControllerIntegrationTest.java
+Rodar com:
+
+
+./mvnw test
+Exemplo de teste:
+
+Carregar filmes na inicialização
+
+Validar intervalo mínimo e máximo de prêmios
+
+Verificar anos com múltiplos vencedores
+
+Validar estúdios com contagem de vitórias
+
+Buscar vencedores por ano
+
+-- Requisitos Atendidos
+ Ler o CSV e carregar dados no H2 ao iniciar
+
+ API RESTful nível 2 de Richardson
+
+ Endpoint para produtor com maior e menor intervalo de vitórias
+
+ Testes de integração implementados
+
+ Banco de dados em memória (H2)
+
+ Frontend Angular integrado
+
+ README com instruções completas
+
+-- Como clonar e rodar
+
+git clone https://github.com/seu-usuario/movies.git
+cd movies
+./mvnw spring-boot:run
+Em outro terminal:
+
+
+cd desafio-frontend
+npm install
+ng serve -o
+
