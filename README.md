@@ -131,6 +131,4 @@ ng test
 
 📖 Referências da API Externa
 
-OpenAPI: https://challenge.outsera.tech/v3/api-docs
-
 Swagger UI: https://challenge.outsera.tech/swagger-ui/index.html
