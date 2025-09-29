@@ -4,7 +4,7 @@ Este projeto foi desenvolvido como solução para o desafio **Golden Raspberry A
 Ele é composto por **duas aplicações**:
 
 - **Backend**: API RESTful desenvolvida em **Spring Boot + Java 17**, responsável por processar e disponibilizar os dados dos filmes.
-- **Frontend**: Aplicação em **Angular + Angular Material**, que consome a API e exibe os dados em uma interface amigável.
+- **Frontend**: Aplicação em **Angular + Angular Material**, que consome a API e exibe os dados em uma interface.
 
 ---
 
@@ -17,7 +17,7 @@ Ele é composto por **duas aplicações**:
 └── README.md       # Este arquivo
 
 Backend (Spring Boot)
-📌 Tecnologias
+** Tecnologias
 
 Java 17
 
@@ -29,7 +29,7 @@ OpenCSV (leitura do CSV)
 
 JUnit 5 + SpringBootTest (testes de integração)
 
-📌 Funcionalidades
+** Funcionalidades
 
 Importa o arquivo movielist.csv automaticamente no startup.
 
@@ -45,7 +45,7 @@ GET /api/movies/studios-with-win-count → estúdios com mais vitórias
 
 GET /api/movies/winners-by-year/{year} → vencedores por ano específico
 
-📌 ## Rodando o backend
+**  ## Rodando o backend
 
 Na pasta movies/:
 
@@ -55,7 +55,7 @@ Na pasta movies/:
 A API ficará disponível em:
  http://localhost:8080/api/movies
 
-📌 Testes de integração
+**  Testes de integração
 
 Na pasta movies/:
 
@@ -82,8 +82,8 @@ Rodar testes do backend
 
 Isso executa os testes de integração.
 
-🎨## Frontend (Angular)
-📌 Tecnologias
+** ## Frontend (Angular)
+**  Tecnologias
 
 Angular 17
 
@@ -113,7 +113,7 @@ Filtro por ano
 
 Filtro por vencedor (Yes / No)
 
-📌 Rodando o frontend
+**  Rodando o frontend
 
 Na pasta frontend/:
 
@@ -150,6 +150,6 @@ ng test
 
  Documentação (README)
 
-## Referências da API Externa
+## **  Referências da API Externa
 
 Swagger UI: https://challenge.outsera.tech/swagger-ui/index.html
