@@ -95,6 +95,7 @@ public class MovieService {
                 intervals.add(new ProducerIntervalDTO(producer, next - prev, prev, next));
             }
         });
+        
 
         int min = intervals.stream().mapToInt(ProducerIntervalDTO::getInterval).min().orElse(0);
         int max = intervals.stream().mapToInt(ProducerIntervalDTO::getInterval).max().orElse(0);
